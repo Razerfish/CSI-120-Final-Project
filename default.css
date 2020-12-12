@@ -6,11 +6,10 @@
 
 html, body {
     background-color: #333;
-    height: 100%;
 }
 
 .main-list {
     border-radius: 1rem;
-    height: 30%;
+    height: 20rem;
     margin-bottom: 10%;
 }
