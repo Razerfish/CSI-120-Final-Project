@@ -6,6 +6,7 @@ function createHomelistItem(parent, id) {
 
         let thumbnail = document.createElement("img");
         thumbnail.classList.add("homelist-thumbnail");
+        thumbnail.setAttribute("draggable", false);
         item.appendChild(thumbnail);
 
         let infobox = document.createElement("div");
