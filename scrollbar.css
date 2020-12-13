@@ -1,0 +1,10 @@
+.homelist-container::-webkit-scrollbar {
+    height: .5rem;
+}
+
+.homelist-container::-webkit-scrollbar-thumb {
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: gray;
+    border-radius: .25rem;
+}
