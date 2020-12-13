@@ -5,7 +5,7 @@
 function initShortlist() {
     let shortlist = document.createElement("div");
 
-    shortlist.classList.add("w-100", "d-flex", "flex-row", "home-list");
+    shortlist.classList.add("w-100", "d-flex", "flex-row", "justify-content-between", "home-list");
     shortlist.id = "shortlist";
 
     document.getElementById("shortlist-container").appendChild(shortlist);

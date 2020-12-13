@@ -19,12 +19,12 @@ html, body {
 
 .homelist-item {
     height: 21rem;
-    width: 13.25rem;
+    width: 15.25rem;
     border-radius: 0.5rem;
     overflow: hidden;
     flex: none !important;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .home-list {
