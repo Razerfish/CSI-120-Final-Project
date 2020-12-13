@@ -8,8 +8,38 @@ html, body {
     background-color: #333;
 }
 
-.main-list {
+.home-list-container {
     border-radius: 1rem;
-    height: 20rem;
-    margin-bottom: 10%;
+    height: 22rem;
+    margin-bottom: 10rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+}
+
+.homelist-item {
+    height: 21rem;
+    width: 13.25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    flex: none !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.home-list {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.thumbnail-image-sm {
+    height: 16rem;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.infobox {
+    height: 6rem;
+    width: 11.25rem;
+    background-color: #333;
+    border-radius: 0 0 .5rem .5rem;
 }
