@@ -2,6 +2,7 @@ function saveWatchlist(watchlist) {
     Cookies.set("watchlist", JSON.stringify({ "watchlist": watchlist }));
 }
 
+
 function getWatchlist() {
     let watchlist = Cookies.get("watchlist");
 
