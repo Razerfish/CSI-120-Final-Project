@@ -79,7 +79,6 @@ function populateSchedule() {
             let index = Math.floor(Math.random() * res.length);
             let show = res.splice(index, 1)[0].show.id;
 
-            console.log(i + 1, index, show, res[index].show.id);
             createHomelistItem(schedule, show);
         }
     });
