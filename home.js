@@ -70,6 +70,48 @@ function createHomelistItem(parent, id) {
 }
 
 
+function populateShortlist() {
+    let shortlist = document.getElementById("shortlist");
+    let watchlist = getWatchlist();
+
+    if (watchlist.length == 0) {
+        shortlist.remove();
+
+        let container = document.createElement("div");
+        container.classList.add("d-flex", "flex-column", "align-items-center", "h-100");
+        document.getElementById("shortlist-container").appendChild(container);
+
+        let message = document.createElement("h2");
+        message.classList.add("text-light", "h5", "text-center", "mt-auto", "mb-2");
+        message.innerText = "Looks like you don't have anything on your watchlist, why not try searching for something?";
+        container.appendChild(message);
+
+        let form = document.createElement("form");
+        form.classList.add("form-inline", "mb-auto", "mt-2");
+        form.action = "./search.html";
+        container.appendChild(form);
+
+        let input = document.createElement("input");
+        input.classList.add("form-control", "mr-sm-2");
+        input.type = "search";
+        input.placeholder = "Search";
+        input.name = "title";
+        form.appendChild(input);
+
+        let button = document.createElement("button");
+        button.classList.add("btn", "btn-outline-warning");
+        button.type = "submit";
+        button.innerText = "Search";
+        form.appendChild(button);
+
+    } else {
+        watchlist.forEach((show) => {
+            createHomelistItem(shortlist, show.id);
+        });
+    }
+}
+
+
 function populateSchedule() {
     let schedule = document.getElementById("schedule");
     let now = new Date();
@@ -87,14 +129,11 @@ function populateSchedule() {
 
 let tvmaze = new TVMaze();
 window.onload = () => {
+    console.warn("This needs to be run through a webserver like live-server for cookies to work!!");
+
     createShortlist();
+    populateShortlist();
+
     createSchedule();
     populateSchedule();
-
-    createHomelistItem(document.getElementById("shortlist"), 178);
-    createHomelistItem(document.getElementById("shortlist"), 37089);
-    createHomelistItem(document.getElementById("shortlist"), 2071);
-    createHomelistItem(document.getElementById("shortlist"), 1121);
-    createHomelistItem(document.getElementById("shortlist"), 5460);
-    createHomelistItem(document.getElementById("shortlist"), 7557);
 }
