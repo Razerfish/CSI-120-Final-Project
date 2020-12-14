@@ -46,3 +46,31 @@ body {
 .homelist-link {
     width: 5rem;
 }
+
+#search-main {
+    width: 85%;
+    margin-top: 11rem;
+}
+
+.result-thumbnail {
+    height: 20rem;
+    width: 14rem;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.result-item {
+    border-radius: 1rem;
+    overflow-x: auto;
+}
+
+#info-column {
+    max-height: 20rem;
+    min-width: 10rem;
+    max-width: 20rem;
+    overflow-y: auto;
+}
+
+.info-item {
+    width: 100%;
+}

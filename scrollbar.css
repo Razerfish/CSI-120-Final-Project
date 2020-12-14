@@ -1,8 +1,9 @@
-.homelist-container::-webkit-scrollbar {
+::-webkit-scrollbar {
     height: .5rem;
+    width: .5rem;
 }
 
-.homelist-container::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     margin-top: auto;
     margin-bottom: auto;
     background-color: gray;
