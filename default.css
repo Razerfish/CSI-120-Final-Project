@@ -92,3 +92,8 @@ body {
 .controls {
     max-width: 14rem;
 }
+
+#watchlist-main {
+    width: 85%;
+    margin-top: 11rem;
+}
