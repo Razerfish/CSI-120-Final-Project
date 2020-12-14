@@ -94,7 +94,6 @@ function createFullListItem(parent, show) {
             event.target.classList.add("btn-success");
             event.target.innerText = "Add Show";
         }
-        console.log(getWatchlist());
     });
     controls.appendChild(watchlistButton);
 
