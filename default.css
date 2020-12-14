@@ -52,19 +52,19 @@ body {
     margin-top: 11rem;
 }
 
-.result-thumbnail {
+.thumbnail {
     height: 20rem;
     width: 14rem;
     border-radius: .5rem;
     overflow: hidden;
 }
 
-.result-item {
+.full-list-item {
     border-radius: 1rem;
     overflow-x: auto;
 }
 
-#info-column {
+.info-column {
     max-height: 20rem;
     min-width: 10rem;
     max-width: 20rem;
@@ -73,4 +73,22 @@ body {
 
 .info-item {
     width: 100%;
+}
+
+.show-link, .watchlist-button {
+    width: 5.6rem;
+}
+
+.watchlist-button {
+    width: 5.6rem;
+    margin-right: 1.4rem;
+}
+
+.show-link {
+    width: 5.6rem;
+    margin-left: 1.4rem;
+}
+
+.controls {
+    max-width: 14rem;
 }
