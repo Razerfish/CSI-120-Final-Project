@@ -1,5 +1,5 @@
 function saveWatchlist(watchlist) {
-    Cookies.set("watchlist", JSON.stringify({ "watchlist": watchlist }));
+    Cookies.set("watchlist", JSON.stringify({ "watchlist": watchlist }), { expires: 365 });
 }
 
 
