@@ -105,9 +105,13 @@ function populateShortlist() {
         form.appendChild(button);
 
     } else {
-        watchlist.forEach((show) => {
-            createHomelistItem(shortlist, show.id);
-        });
+        let items = Math.min(10, watchlist.length);
+
+        for (let i = 0; i < items; i++) {
+            let index = Math.floor(Math.random() * watchlist.length);
+            let id = watchlist.splice(index, 1);
+            createHomelistItem(document.getElementById("shortlist"), id);
+        }
     }
 }
 
